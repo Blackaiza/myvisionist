@@ -133,7 +133,7 @@ class FreelancerEditProfile extends BaseEditProfile
                                 ->helperText('Enter your YouTube channel name or ID')
                                 ->columnSpanFull(),
                                 TagsInput::make('tags')
-                                    ->label('Tags')
+                                    ->label('Tags - Skills & Expertise')
                                     ->placeholder('Add tags to your profile')
                                     ->columnSpanFull(),
                             ]),
