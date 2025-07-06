@@ -28,6 +28,7 @@ class ArtworksRelationManager extends RelationManager
     public function table(Table $table): Table
     {
         return $table
+		->modifyQueryUsing(fn ($query) => $query->where('publish', true))
             ->recordTitleAttribute('title')
             ->columns([
                 ImageColumn::make('image')

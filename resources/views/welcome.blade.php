@@ -508,21 +508,21 @@
         <div class="hero-section">
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image: url('{{ asset('artworks/urban-montage.jpg') }}');">
+                    <div class="swiper-slide" style="background-image: url('{{ asset('storage/artworks/urban-montage.jpg') }}');">
                         <div class="slide-content">
                             <h2 class="slide-title">Start Your First Creative Job</h2>
                             <p class="slide-description">Explore opportunities in with top certified creative community.</p>
                             <a href="{{ url('/freelancer/login') }}" class="slide-button">Find Job Now</a>
                         </div>
                     </div>
-                    <div class="swiper-slide" style="background-image: url('{{ asset('artworks/storyboard.jpg') }}');">
+                    <div class="swiper-slide" style="background-image: url('{{ asset('storage/artworks/storyboard.jpg') }}');">
                         <div class="slide-content">
                             <h2 class="slide-title">Find Your Freelancer</h2>
                             <p class="slide-description">Find worker that suit with your need.</p>
                             <a href="{{ url('/freelancer/login') }}" class="slide-button">Find Freelancer Now</a>
                         </div>
                     </div>
-                    <div class="swiper-slide" style="background-image: url('{{ asset('artworks/film-poster.jpg') }}');">
+                    <div class="swiper-slide" style="background-image: url('{{ asset('storage/artworks/film-poster.jpg') }}');">
                         <div class="slide-content">
                             <h2 class="slide-title">Content Creation Gigs</h2>
                             <p class="slide-description">Discover roles and jobs in video production, writing, and social media content creation.</p>

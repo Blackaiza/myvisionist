@@ -70,6 +70,7 @@ class UserProfileResource extends Resource
                         ->extraAttributes(['class' => 'mt-2']),
                     TextColumn::make('aboutme')
                         ->label('')
+			->searchable()
                         ->limit(80)
                         ->alignCenter()
                         ->formatStateUsing(fn($state) => $state ? strip_tags($state) : 'No bio available')
@@ -78,6 +79,7 @@ class UserProfileResource extends Resource
                         ->extraAttributes(['class' => 'mt-1 line-clamp-2']),
                     TagsColumn::make('tags')
                         ->label('')
+                        ->searchable()
                         ->limit(6)
                         ->alignCenter()
                         ->formatStateUsing(fn($state) => $state ? $state : ['No tags'])

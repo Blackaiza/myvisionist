@@ -14,6 +14,7 @@ use Jeffgreco13\FilamentBreezy\Traits\TwoFactorAuthenticatable;
 
 
 class User extends Authenticatable implements MustVerifyEmail, FilamentUser, HasAvatar
+//class User extends Authenticatable implements MustVerifyEmail, FilamentUser, HasAvatar
 {
 
     public function getFilamentAvatarUrl(): ?string

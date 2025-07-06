@@ -89,8 +89,8 @@ class FreelancerEditProfile extends BaseEditProfile
                                             $query->where('id', '!=', $cert1);
                                         }
 
-                                        return $query->pluck('title', 'id')->toArray();
-                                    })
+                                        return $query->pluck('title', 'id')->toArray();                                    
+					})
                                     ->columnSpanFull(),
                                 Select::make('certificate_3')
                                     ->label('Certificate 3')
@@ -113,7 +113,7 @@ class FreelancerEditProfile extends BaseEditProfile
 
                                         return $query->pluck('title', 'id')->toArray();
                                     })
-                                    ->columnSpanFull(),
+				->columnSpanFull(),
                             ]),
                         Tabs\Tab::make('Other')
                             ->icon('heroicon-o-ellipsis-horizontal')

@@ -217,7 +217,7 @@ class ArtworkResource extends Resource
                         Actions::make([
                             Action::make('like')
                                 ->label('Like')
-                                ->icon(fn (Artwork $record) => $record->isLikedBy(\Filament\Facades\Filament::auth()->user()) ? 'heroicon-heart' : 'heroicon-o-heart')
+                                ->icon(fn (Artwork $record) => $record->isLikedBy(\Filament\Facades\Filament::auth()->user()) ? 'heroicon-m-heart' : 'heroicon-o-heart')
                                 ->color(fn (Artwork $record) => $record->isLikedBy(\Filament\Facades\Filament::auth()->user()) ? 'warning' : 'gray')
                                 ->action(function (Artwork $record) {
                                     $isLiked = $record->toggleLike(\Filament\Facades\Filament::auth()->user());

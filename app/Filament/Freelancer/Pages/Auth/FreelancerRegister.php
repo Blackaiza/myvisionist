@@ -15,7 +15,7 @@ class FreelancerRegister extends BaseRegister
             ->schema([
                 $this->getNameFormComponent(), // Default name field
                 $this->getEmailFormComponent(), // Default email field
-                $this->getPhoneFormComponent(), // Default phone field
+//                $this->getPhoneFormComponent(), // Default phone field
                 TextInput::make('password')
                     ->password()
                     ->required()
